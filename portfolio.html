@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            color: #4e4e4e;
+        }
+
+        .nav {
+            display: flex;
+            width: 100%;
+            height: 70px;
+            background-color: transparent;
+            position: fixed;
+            z-index: 1;
+            background-color: #fff;
+
+        }
+
+        .heading {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        .img1 {
+            position: absolute;
+            background-image: url(./Images/laptopimg.webp);
+            width: 100%;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .textitems {
+            display: none;
+        }
+
+        .paragraph {
+            font-weight: 300;
+        }
+
+        .shadow {
+            position: absolute;
+            border: 1px solid white-space;
+            background-color: whitesmoke;
+            top: 685px;
+            height: 95%;
+            width: 70%;
+            margin-top: 170px;
+            box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+            background-color: #fff;
+            margin-bottom: 3rem;
+            box-sizing: border-box;
+
+            align-items: center;
+            margin-left: 230px;
+            margin-right: 50px;
+            display: flex;
+            gap: 15px;
+
+        }
+
+        .pasportimg {
+            width: 50%;
+            height: 80%;
+            gap: 20px;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+
+        .img2 {
+            display: flex;
+            gap: 17px;
+            margin-left: 30PX;
+        }
+
+        .bar {
+            border: 1px solid black;
+        }
+
+        .container {
+            background-color: rgb(192, 192, 192);
+            width: 100%;
+
+
+        }
+
+        .skill {
+            background-color: rgb(35, 143, 179);
+            color: white;
+            padding: 1%;
+
+            font-size: 20px;
+            height: 3px;
+
+        }
+
+        .barpercent {
+            display: flex;
+            gap: 350px;
+        }
+
+        .serv {
+            width: 100%;
+            height: auto;
+            padding-top: 1500px;
+        }
+
+        .serviceheading {
+            height: 20%;
+            font-size: 30px;
+            font-style: italic;
+            text-align: center;
+            color: black;
+        }
+
+        .box1 {
+            height: 45%;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: -1000px;
+
+        }
+
+        .shadow1 {
+            height: 60%;
+            width: 33%;
+            box-shadow: 20px 20px 50px 10px pink inset;
+            text-align: center;
+            /* align-content: center; */
+        }
+
+        .box2 {
+            height: 45%;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-left: 150px;
+            margin-right: 150px;
+            margin-top: 50px;
+
+        }
+
+        .icon {
+            font-size: 70px;
+            text-align: center;
+        }
+
+        .icon:hover {
+            color: whitesmoke;
+        }
+
+        .iconbox {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            line-height: 1.5;
+            box-shadow: 0 0 0 10px #0078ff;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+        }
+
+        .iconbox:hover {
+            background-color: #0078ff;
+            color: white;
+        }
+
+        .image {
+            position: absolute;
+            background-image: url(./Images/laptopimg.webp);
+            width: 100%;
+            height: 500px;
+            margin-top: 50px;
+
+        }
+
+        .blue {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            opacity: .7;
+            background-color: #0078ff;
+
+        }
+
+        .flex {
+            margin-top: 150px;
+            display: flex;
+            margin-left: 200px;
+            margin-right: 150px;
+            gap: 250px;
+        }
+
+        .iconss {
+            font-size: 70px;
+            text-align: center;
+            color: white;
+        }
+
+        .portfolio {
+            padding-top: 550px;
+            font-size: 25px;
+
+        }
+
+        .workimg {
+            display: flex;
+            gap: 30px;
+            margin-left: 140px;
+            margin-top: 50px;
+
+        }
+
+        .shedo {
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            text-align: center;
+            color: black;
+            line-height: 0.5;
+        }
+
+        .photo:hover {
+
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+            color: white;
+            transition: all 1s;
+            display: block;
+            overflow: hidden;
+        }
+
+        .imagees {
+            position: absolute;
+            background-image: url(./Images/OIP\ \(1\).jpeg);
+            width: 100%;
+            height: 500px;
+            margin-top: 50px;
+
+        }
+
+        .bluees {
+            position: absolute;
+            top: 0;
+            left: 0px;
+            padding: 0;
+            height: 500px;
+            width: 100%;
+            opacity: .7;
+            background-color: #0078ff;
+        }
+
+        .hello {
+
+            margin-left: 650px;
+            margin-top: 50px;
+            color: white;
+        }
+
+        button:hover {
+            background-color: grey;
+        }
+
+        .form {
+            width: 70%;
+            height: 680px;
+            display: flex;
+            margin-top: 600px;
+            margin-left: 220px;
+            box-shadow: 20px 20px 50px 10px pink inset;
+            gap: 70px;
+
+        }
+
+        .formcontent {
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 50%;
+        }
+
+        .height {
+            height: 25%;
+        }
+
+        .height1 {
+            height: 70%;
+            margin-left: 30PX;
+        }
+
+        .width {
+            width: 70%;
+        }
+
+        .width1 {
+            width: 50%;
+        }
+
+        .aboutyellow {
+            color: orange;
+            font-size: 20px;
+        }
+
+        .experience {
+            color: white;
+            text-align: center;
+        }
+
+        .black {
+            text-align: center;
+            color: black;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .id {
+            display: flex;
+            font-size: 60px;
+            margin-left: 650px;
+            gap: 50px;
+        }
+
+        .starting {
+            position: relative;
+            height: 100px;
+        }
+
+        .dev {
+            margin-left: 90px;
+        }
+
+        .name {
+            color: black;
+            font-size: 60px;
+        }
+
+        .css3width2{
+            width: 90%;
+        }
+
+        .phpwidth {
+            width: 75%
+        }
+
+        .about {
+            height: 80%;
+            line-height: 2;
+            font-weight: 700;
+        }
+
+        .serviceheading {
+            height: 1200px;
+        }
+
+        .formblock {
+            margin-bottom: 60px;
+        }
+
+        .sendbutton {
+            width: 160px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #0078ff;
+        }
+
+        .heading a {
+            text-decoration: none;
+
+        }
+
+        .heading a:hover {
+            color: red;
+        }
+        .getintouch{
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        .gwtintouch1{
+            display: flex;
+             gap: 10px;
+        }
+        .getintouch2{
+            font-size: 30px;
+
+        }
+       
+        
+        
+
+    </style>
+
+    <title>document</title>
+</head>
+
+<body>
+    <div>
+        <div class="starting">
+            <nav class="nav">
+
+                <div class="width">
+                    <h1 class="dev"> SWATI PATIDAR</h1>
+                </div>
+                <div class="heading">
+                    <a href="#home"> HOME</a>
+                    <a href="#about"> ABOUT</a>
+                    <a href="#service">SERVICES</a>
+                    <a href="#work"> WORK</a>
+                    <a href="#port">PORTFOLIO</a>
+                    <a href="#contact"> CONTACT</a>
+                </div>
+            </nav>
+            <div class="img1" id="home">
+                <div>
+                    <h1 class="name">I am Swati Patidar</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="shadow" id="about">
+        <div class="pasportimg">
+            <div class="img2">
+                <div class="height">
+                    <img src="./Images/ej.jpg" alt="" width="200px" height="200px">
+                </div>
+
+                <div class="height">
+                    <p> <b> Name:</b> SWATI PATIDAR</p>
+                    <p> <b> DOB:</b> 16/03/2001</p>
+                    <p> <b> Email:</b> patidarswati3@gmail.com</p>
+                    <p> <b>Phone: 6263989980</b> </p>
+                    <p> <b>GITHUB:swatipatidar0830</b> </p>
+
+
+                </div>
+            </div>
+            <div class="height1">
+                <h2>SKILLS</h2>
+                <div class="barpercent">
+                    <div class="width">
+                        <H3>HTML</H3>
+                    </div>
+                    <div>
+                        <h4>90%</h4>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skill css3width2"></div>
+                </div>
+                <div class="barpercent">
+                    <div class="width">
+                        <h3>CSS3</h3>
+                    </div>
+                    <div>
+                        <h4>75%</h4>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skill phpwidth"></div>
+                </div>
+                <div class="barpercent">
+                    <div class="width">
+                        <h3>PHP</h3>
+                    </div>
+                    <div >
+                        <h4>50%</h4>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skill width1 "></div>
+                </div>
+                <div class="barpercent">
+                    <div class="width">
+                        <h3>JAVASCRIPT</h3>
+                    </div>
+                    <div >
+                        <h4>90%</h4>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skill " style="width:90%"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="width1 about">
+            <h1><u>About me</u></h1>
+            <p> My name is SWATI PATIDAR </p>
+            <p class="aboutyellow">Masters :</p>
+            <p>At present I'm persuing masters in computer application(MCA) from IPS Academy,Inodre,Madhya Pradesh,which
+                is affiliated to RGPV University Bhopal MP.
+            </p>
+            <p class="aboutyellow">BACHELORS :</p>
+            <P>I have done bachelors of science(B.Sc.) in computer science with the aggregate of 77.2% from Holkar
+                Science College Indore Madhya Pradesh.</P>
+            <p class="aboutyellow">higher studies :</p>
+            <p>I have done 10th and 12th in MATHEMATICS from MP BOARD ,BHOPAL,MADHYA PRADESH</p>
+
+        </div>
+
+
+    </div>
+    <div class="serv serviceheight">
+        <div class="serviceheading" id="service">
+            <H1> <b> SERVICE</b></H1>
+            <h4>this all are the services :-</h4>
+        </div>
+        <div class="box1">
+            <div class="shadow1">
+                <div class="iconbox">
+                    <div class="icon"><i class="fa fa-television" aria-hidden="true" ;></i></div>
+                </div>
+                <div>
+                    <br><br>
+                    <h3>WEB DESIGN</h3>
+
+                </div>
+            </div>
+            <div class="shadow1">
+                <div class="iconbox">
+                    <div class="icon"><i class="fa fa-tachometer"></i></div>
+                </div>
+                <div>
+                    <br><br>
+                    <h3>WEB DEVELOPMENT</h3>
+
+                </div>
+
+            </div>
+            <div class="shadow1">
+                <div class="iconbox">
+                    <div class="icon"><i class="fa fa-camera-retro"></i></div>
+                </div>
+                <div>
+                    <br><br>
+                    <h3>PHOTOGRAPHY</h3>
+
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="shadow1">
+                <div class="iconbox">
+                    <div class="icon"><i class="fa fa-tablet" aria-hidden="true"></i></div>
+                </div>
+                <div>
+                    <br><br>
+                    <h3>RESPONSIVE DESIGN</h3>
+
+                </div>
+            </div>
+            <div class="shadow1">
+                <div class="iconbox">
+                    <div class="icon"><i class="fa-solid fa-paintbrush"></i></div>
+                </div>
+                <div>
+                    <br><br>
+                    <h3>CSS</h3>
+
+                </div>
+            </div>
+            <div class="shadow1">
+                <div class="iconbox">
+                    <div class="icon"><i class="fa-solid fa-chart-simple"></i></div>
+                </div>
+                <div>
+                    <br><br>
+                    <h3>HTML</h3>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image" id="work">
+        <div class="blue">
+            <div class="flex">
+                <div>
+                    <div class="iconss"><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+                    <h1 class="experience">0</h1>
+
+                    <p class="experience">WORKS COMPLETED</p>
+                </div>
+                <div>
+                    <div class="iconss"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                    <h1 class="experience">1 </h1>
+
+                    <p class="experience">YEARS OF EXPERIENCE</p>
+                    <p class="experience">INTERN-BYTE BILLION (JAN 2023-JULY 2023)</p>
+                </div>
+                <div>
+                    <div class="iconss"><i class="fa fa-users" aria-hidden="true"></i></div>
+                    <h1 class="experience">0</h1>
+                    <p class="experience">TOTAL CLIENTS</p>
+                </div>
+                <div>
+                    <div class="iconss"><i class="fa fa-trophy" aria-hidden="true"></i></div>
+                    <h1 class="experience">0</h1>
+                    <p class="experience">AWARD WON</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio" id="port">
+        <div class="black">
+            <h1> <b> PORTFOLIO</b></h1>
+
+        </div>
+        <div class="workimg">
+            <div class="shedo">
+                <div class="photo"> <img src="./Images/work-1.jpg" alt="" width="400px;height
+            250px"></div>
+                <p>WEB DESIGN <br>
+
+            </div>
+            <div class="shedo">
+                <div class="photo"><img src="./Images/work-2.jpg" alt="" width="400px;height
+            250px"></div>
+                <p>WEB DEVELOPMENT <br>
+
+            </div>
+            <div class="shedo">
+                <div class="photo"><img src="./Images/work-3.jpg" alt="" width="400px;height
+            250px"></div>
+                <p>HTML <br>
+
+            </div>
+        </div>
+        <div class="workimg">
+            <div class="shedo">
+                <div class="photo"><img src="./Images/work-4.jpg" alt="" width="400px;height
+            250px"></div>
+                <p>CSS3 <br>
+
+            </div>
+            <div class="shedo">
+                <div class="photo"><img src="./Images/work-5.jpg" alt="" width="400px;height
+            250px"></div>
+                <p>JAVA <br>
+
+            </div>
+            <div class="shedo">
+                <div class="photo"><img src="./Images/work-6.jpg" alt="" width="400px;height
+            250px"></div>
+                <p>REACT JS <br>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<div class="imagees">
+    <div class="bluees">
+        <div class="hello"><img src="./Images/ej.jpg" alt="" style="width: 200px;height: 200px; border-radius: 50%;">
+        </div>
+        <h2 class="experience">SWATI PATIDAR</h2>
+        <h3 class="experience">i am a software engineer </h3>
+        <div class="id">
+
+            <a href="https://www.instagram.com/swatii_patidar/?next=%2F" class="yellow"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href=https://github.com/swatipatidar0830 class="yellow"> <i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/swati-patidar-2a6037262/" class="yellow"> <i
+                    class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+
+    </div>
+</div>
+<div class="form">
+    <div class="formcontent">
+        <h1> send message me</h1>
+        <form action="">
+            <div class="formblock">
+                <input type="text" placeholder="your name" style="width: 100%;height: 35px;">
+            </div>
+            <div class="formblock">
+                <input type="email" placeholder="your email" style="width: 100%;height: 35px;">
+            </div>
+            <div class="formblock">
+                <input type="number" placeholder="your number" style="width: 100%;height: 35px;">
+            </div>
+            <div class="formblock">
+                <input type="text" placeholder="enter your subject" style="width: 100%;height: 120px;">
+            </div>
+            <div>
+                <button class="sendbutton">
+                    <h2> Send Meesage</h2>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="formcontent" id="contact">
+        <h1>get in touch</h1>
+        <p class="getintouch">I am looking to start my carrer with a reputed company as an entry
+            level software engineer and want to become an knowledgeable personality.I am passionate to learn new
+            skills.i am a self motivated and hardworking fresher seeking for an opportunity to work in a challenging
+            environment to prove my skills and utilize my knowledge & intelligence in the growth of the organization.
+        </p>
+        <div class="getintouch1">
+            <div class="getintouch2">
+
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+            <div>
+                <p>INDORE,MADHYA PRADESH,INDIA(452001)</p>
+            </div>
+        </div>
+        <div class="getintouch1">
+            <div class="getintouch2">
+
+                <i class="fa fa-phone" aria-hidden="true"></i></i>
+            </div>
+            <div>
+                <p>6263989980</p>
+            </div>
+        </div>
+        <div class="getintouch1">
+            <div class="getintouch2">
+
+                <i class="fa fa-envelope" aria-hidden="true"></i></i></i>
+            </div>
+            <div>
+                <p>patidarswati3@gmail.com</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</html>
+<!-- <strong class="text-slider">Grap</strong> -->
+<!-- portfolioimg.jpg-->
+<!-- https://www.free-css.com/free-css-templates/page253/devfolio -->
+<!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css -->
